@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: humanmanager
+      POSTGRES_DB: humanmanager
+  adminer:
+    depends_on:
+      - db
+    image: adminer
+    restart: always
+    ports:
+      - 7070:7087
