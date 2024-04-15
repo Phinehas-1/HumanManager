@@ -3,3 +3,14 @@ project:
     version: v1
     services:
         count: 2
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:7070/humanmanager
+        username: humanmanager
+        password: password
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.postgreSQLDialect
+        hibernate:
+            ddl-auto: create-drop
