@@ -1,0 +1,5 @@
+project:
+    name: Human Manager
+    version: v1
+    services:
+        count: 2
