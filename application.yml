@@ -5,7 +5,7 @@ project:
         count: 2
 spring:
     datasource:
-        url: jdbc:postgresql://localhost:7070/humanmanager
+        url: jdbc:postgresql://localhost:5432/humanmanager
         username: humanmanager
         password: password
     jpa:
